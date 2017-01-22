@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PickImage/ViewController.swift"
-            timestampString = "506791452.222902"
+            timestampString = "506793904.928389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "pickAnImage(_:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "pickAnImageFromAlbum(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PickImage/ViewController.swift"
-            timestampString = "506791442.248624"
+            timestampString = "506793904.928389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "pickAnImage(_:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "pickAnImageFromAlbum(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PickImage/ViewController.swift"
-            timestampString = "506791443.72685"
+            timestampString = "506793904.928389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "pickAnImage(_:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "pickAnImageFromAlbum(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PickImage/ViewController.swift"
-            timestampString = "506791797.418388"
+            timestampString = "506793904.928389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "pickAnImage(_:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "pickAnImageFromAlbum(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

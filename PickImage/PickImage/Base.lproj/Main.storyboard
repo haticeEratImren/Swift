@@ -28,9 +28,14 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWZ-md-gzJ">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Pick" id="RMe-FH-aDa">
+                                    <barButtonItem title="Album" id="RMe-FH-aDa">
                                         <connections>
-                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="Yip-RC-hyJ"/>
+                                            <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="Gzt-bM-bff"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Camera" id="4ky-Q4-NP1">
+                                        <connections>
+                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="hAz-eA-1WM"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -44,11 +49,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tWZ-md-gzJ" secondAttribute="trailing" constant="-16" id="eyh-bG-5OY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tWZ-md-gzJ" secondAttribute="bottom" id="m0x-Zv-NHR"/>
                             <constraint firstItem="vqy-Xt-PIh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oP9-lg-QjP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vqy-Xt-PIh" secondAttribute="trailing" id="xQa-1y-8yZ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ImagePickerView" destination="vqy-Xt-PIh" id="h5G-Es-dYp"/>
+                        <outlet property="albumButton" destination="RMe-FH-aDa" id="XTP-8L-BSf"/>
+                        <outlet property="cameraButton" destination="4ky-Q4-NP1" id="bbX-Us-asM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

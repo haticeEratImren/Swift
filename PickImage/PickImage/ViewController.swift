@@ -11,10 +11,17 @@ import UIKit
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var ImagePickerView: UIImageView!
+    @IBOutlet weak var albumButton: UIBarButtonItem!
+    @IBOutlet weak var cameraButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,12 +29,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func pickAnImage(_ sender: Any) {
+    @IBAction func pickAnImageFromAlbum(_ sender: Any) {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
+        pickerController.sourceType = .photoLibrary
         present(pickerController, animated: true, completion: nil)
-        
-        
+    }
+    
+    @IBAction func pickAnImageFromCamera(_ sender: Any) {
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        pickerController.sourceType = .camera
+        present(pickerController, animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
