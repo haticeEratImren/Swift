@@ -22,9 +22,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlT-oT-9Zd" userLabel="Top Text Field">
+                                <rect key="frame" x="139" y="318" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqy-Xt-PIh">
                                 <rect key="frame" x="16" y="213" width="342" height="240"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRR-U6-7Vj" userLabel="Bottom Text Field">
+                                <rect key="frame" x="139" y="368" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWZ-md-gzJ">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
@@ -46,15 +58,21 @@
                             <constraint firstItem="tWZ-md-gzJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="3EN-6L-Pnh"/>
                             <constraint firstItem="vqy-Xt-PIh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Agt-vE-1rS"/>
                             <constraint firstItem="vqy-Xt-PIh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GVj-qX-VnX"/>
+                            <constraint firstItem="WRR-U6-7Vj" firstAttribute="centerX" secondItem="vqy-Xt-PIh" secondAttribute="centerX" id="V2O-ee-z92"/>
+                            <constraint firstItem="WRR-U6-7Vj" firstAttribute="bottom" secondItem="vqy-Xt-PIh" secondAttribute="bottom" id="ZJR-CV-pv4"/>
+                            <constraint firstItem="xlT-oT-9Zd" firstAttribute="top" secondItem="vqy-Xt-PIh" secondAttribute="top" id="aVD-nf-Xvx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tWZ-md-gzJ" secondAttribute="trailing" constant="-16" id="eyh-bG-5OY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tWZ-md-gzJ" secondAttribute="bottom" id="m0x-Zv-NHR"/>
+                            <constraint firstItem="xlT-oT-9Zd" firstAttribute="centerX" secondItem="vqy-Xt-PIh" secondAttribute="centerX" id="mcL-g9-5B1"/>
                             <constraint firstItem="vqy-Xt-PIh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oP9-lg-QjP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ImagePickerView" destination="vqy-Xt-PIh" id="h5G-Es-dYp"/>
                         <outlet property="albumButton" destination="RMe-FH-aDa" id="XTP-8L-BSf"/>
+                        <outlet property="bottomTextField" destination="WRR-U6-7Vj" id="xRa-Bv-Uhv"/>
                         <outlet property="cameraButton" destination="4ky-Q4-NP1" id="bbX-Us-asM"/>
+                        <outlet property="topTextField" destination="xlT-oT-9Zd" id="yCl-i7-UXN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
